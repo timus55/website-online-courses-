@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <title> Homepage</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<center><h1>ONLINE COURSES</h1></center>	
+  <div class="container">
+    <div class="nav-wrapper">
+      <div class="left-side">
+        <div class="nav-link-wrapper active-nav-link">
+          <a href="index.html">Home</a>
+        </div>
+
+        <div class="nav-link-wrapper">
+          <a href="about.html">About</a>
+        </div>
+      </div>
+
+      <div class="right-side">
+        <div class="right-side">
+				<div class="nav-linker">
+					<a href="signup_form.html">Register</a>
+				</div>
+		</div>
+      </div>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="portfolio-items-wrapper">
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/logo/./c.png)"></div>
+
+          <div class="img-text-wrapper">
+            
+
+            <div class="subtitle">C language tutorials</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/logo/c++.png)"></div>
+          <div class="img-text-wrapper">
+           
+
+            <div class="subtitle">C++ language tutorials</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/logo/Go.png)"></div>
+          <div class="img-text-wrapper">
+         
+            <div class="subtitle">Go language tutorials</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/logo/java.png)"></div>
+          <div class="img-text-wrapper">
+       
+            <div class="subtitle">Java language tutorials</div>
+
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/logo/js.jfif)"></div>
+          <div class="img-text-wrapper">
+            
+            <div class="subtitle">Java Script tutorials</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/logo/php.png)"></div>
+          <div class="img-text-wrapper">
+            
+
+            <div class="subtitle">PHP language tutorials</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/logo/python.png)"></div>
+          <div class="img-text-wrapper">
+          
+                      <div class="subtitle">Python language tutorials</div>
+
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/logo/R.jfif)"></div>
+          <div class="img-text-wrapper">
+            
+
+            <div class="subtitle">R language tutorials</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/logo/perl.png)"></div>
+          <div class="img-text-wrapper">
+
+            <div class="subtitle">Perl language tutorials</div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+  <footer>
+  <p>Footer</p>
+</footer>
+
+
+</body>
+
+<script>
+  const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+
+  portfolioItems.forEach(portfolioItem => {
+    portfolioItem.addEventListener('mouseover', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.add('image-blur');
+    });
+
+    portfolioItem.addEventListener('mouseout', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.remove('image-blur');
+    });
+  });
+
+</script>
+
+</html>

@@ -1,0 +1,49 @@
+<!doctype html>
+
+<html>
+
+<head>
+	<link rel = "stylesheet" href = "login_style.css">
+	<script src="test.js"></script>
+	<script src = "jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+	<h2>Login Form</h2>
+	<br>
+
+	<div class="container">
+
+		<form name = "myform" action = "alert(You are registered for the course)">
+			
+			<div class="row">
+				<div class="col-20">
+					<label>Username</label>
+				</div>
+				<div class="col-80">
+					<input type="text" name="uname" placeholder="Enter your username">
+				</div>
+	        </div>
+		
+			<div class="row">
+				<div class="col-20">
+					<label>Password</label>
+				</div>
+				<div class="col-80">
+					<input type = "password" name = "pwd" placeholder = "Enter your Password">
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="submit-wrap">
+					<input type="submit" value="Log In" onclick = "return validate();">
+				</div>
+			</div>
+			
+		</form>
+		
+	</div>
+
+</body>
+
+</html>
